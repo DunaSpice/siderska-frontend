@@ -1,5 +1,6 @@
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
+import { useLocale } from 'next-intl';
 
 export function generateStaticParams() {
   return [{ locale: 'uk' }, { locale: 'ru' }, { locale: 'en' }];
@@ -7,6 +8,7 @@ export function generateStaticParams() {
 
 export default function Home() {
   const t = useTranslations('home');
+  const locale = useLocale();
 
   return (
     <main className="min-h-screen">
@@ -37,6 +39,8 @@ export default function Home() {
                 {t('navigation.about')}
               </Link>
             </div>
+          </div>
+        </div>
       </section>
 
       {/* About Preview Section */}
