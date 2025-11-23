@@ -8,6 +8,7 @@ export function generateStaticParams() {
 
 export default function Home() {
   const t = useTranslations('home');
+  const nav = useTranslations('navigation');
   const locale = useLocale();
 
   return (
@@ -36,7 +37,7 @@ export default function Home() {
                 href={`/${locale}/about`}
                 className="btn btn-secondary"
               >
-                {t('navigation.about')}
+                {nav('about')}
               </Link>
             </div>
           </div>
@@ -74,32 +75,32 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="card stagger-item">
               <h3 className="text-2xl font-semibold mb-4 text-text-primary">{t('services.online')}</h3>
-              <p className="text-text-secondary mb-6">Регулярні групові заняття в прямому ефірі</p>
+              <p className="text-text-secondary mb-6">{t('services.onlineDescription')}</p>
               <Link 
                 href={`/${locale}/services`}
                 className="text-primary font-semibold hover:text-primary-dark"
               >
-                Докладніше →
+                {t('services.learnMore')} →
               </Link>
             </div>
             <div className="card stagger-item">
               <h3 className="text-2xl font-semibold mb-4 text-text-primary">{t('services.personal')}</h3>
-              <p className="text-text-secondary mb-6">Індивідуальний підхід до вашої практики</p>
+              <p className="text-text-secondary mb-6">{t('services.personalDescription')}</p>
               <Link 
                 href={`/${locale}/services`}
                 className="text-primary font-semibold hover:text-primary-dark"
               >
-                Докладніше →
+                {t('services.learnMore')} →
               </Link>
             </div>
             <div className="card stagger-item">
               <h3 className="text-2xl font-semibold mb-4 text-text-primary">{t('services.retreats')}</h3>
-              <p className="text-text-secondary mb-6">Тижневі йога-ретрити в Туреччині</p>
+              <p className="text-text-secondary mb-6">{t('services.retreatsDescription')}</p>
               <Link 
                 href={`/${locale}/services`}
                 className="text-primary font-semibold hover:text-primary-dark"
               >
-                Докладніше →
+                {t('services.learnMore')} →
               </Link>
             </div>
           </div>
@@ -136,15 +137,15 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             <div className="card stagger-item">
               <p className="text-text-secondary mb-4 italic">
-                "Заняття з Оленою змінили моє ставлення до йоги. Це не просто вправи, а справжня робота з собою."
+                "{t('testimonials.quote1')}"
               </p>
-              <p className="text-text-primary font-semibold">— Марія, Київ</p>
+              <p className="text-text-primary font-semibold">{t('testimonials.author1')}</p>
             </div>
             <div className="card stagger-item">
               <p className="text-text-secondary mb-4 italic">
-                "19 років досвіду відчувається в кожному русі, кожній підказці. Професіонал найвищого рівня."
+                "{t('testimonials.quote2')}"
               </p>
-              <p className="text-text-primary font-semibold">— Олексій, Відень</p>
+              <p className="text-text-primary font-semibold">{t('testimonials.author2')}</p>
             </div>
           </div>
           <div className="text-center">

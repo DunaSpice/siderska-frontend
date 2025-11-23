@@ -34,13 +34,45 @@
     "hero": {
       "title": "Online Yoga with Olena Siderska",
       "subtitle": "19 years of experience. Group and personal sessions. Retreats in Turkey.",
-      "cta": "Book a Class"
+      "description": "Daughter of Andriy Sidersky, Nike trainer, curator of the 'Healthy Ukraine' program. Yoga23 methodology.",
+      "cta": "Book a Class",
+      "watchVideo": "Watch Video"
+    },
+    "about": {
+      "headline": "About Me",
+      "title": "Olena Siderska",
+      "preview": "With 19 years of experience teaching yoga, I focus on personalized practices that help you connect body and mind.",
+      "learnMore": "Learn More"
     },
     "services": {
       "title": "Services",
+      "subtitle": "Choose the best option for your practice",
       "online": "Online Groups",
+      "onlineDescription": "Regular online group sessions in live format",
       "personal": "Personal Training",
-      "retreats": "Retreats"
+      "personalDescription": "Individual approach to your practice",
+      "retreats": "Retreats",
+      "retreatsDescription": "Weekly yoga retreats in Turkey",
+      "seeAll": "See All Services",
+      "learnMore": "Learn More"
+    },
+    "philosophy": {
+      "title": "My Philosophy",
+      "quote": "Yoga is not about touching your toes, it's about what you learn on the way down.",
+      "description": "I believe in a mindful approach to yoga, focusing on the individual needs of each practitioner."
+    },
+    "testimonials": {
+      "title": "What My Students Say",
+      "viewAll": "View All Testimonials",
+      "quote1": "Classes with Olena changed my attitude towards yoga. It's not just exercises, but real work with yourself.",
+      "author1": "— Maria, Kyiv",
+      "quote2": "19 years of experience is felt in every movement, every tip. Professional of the highest level.",
+      "author2": "— Alexey, Vienna"
+    },
+    "cta": {
+      "title": "Ready to Start Your Practice?",
+      "subtitle": "Join a class today or book a personal session",
+      "button": "View Schedule"
     }
   },
   "about": {

@@ -1,17 +1,18 @@
-import { NextIntlClientProvider } from 'next-intl';
+import { NextIntlClientProvider, useMessages } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { locales } from '@/i18n';
 import '../globals.css';
+import { Header, Footer } from '@/components';
 
 export default async function LocaleLayout({
   children,
   params
 }: {
   children: React.ReactNode;
-  params: Promise<{ locale: string }>;
+  params: { locale: string };
 }) {
-  const { locale } = await params;
+  const { locale } = params;
   
   if (!locales.includes(locale as any)) {
     notFound();
@@ -21,9 +22,13 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale}>
-      <body>
-        <NextIntlClientProvider messages={messages}>
-          {children}
+      <body className="pt-16">
+        <NextIntlClientProvider locale={locale} messages={messages}>
+          <Header />
+          <main className="min-h-screen pt-20">
+            {children}
+          </main>
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>
