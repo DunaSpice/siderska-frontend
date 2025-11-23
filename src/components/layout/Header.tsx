@@ -43,13 +43,13 @@ export const Header: React.FC = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-fixed transition-all duration-300 ${
         isScrolled
           ? 'bg-white/95 backdrop-blur-md shadow-md'
           : 'bg-transparent'
       }`}
     >
-      <div className="container mx-auto">
+      <div className="container">
         <div className="flex items-center justify-between py-4 md:py-5">
           {/* Logo */}
           <Link
@@ -70,7 +70,7 @@ export const Header: React.FC = () => {
                 className={`text-sm font-medium transition-colors hover:text-primary ${
                   pathname === item.href
                     ? 'text-primary'
-                    : 'text-gray-700'
+                    : 'text-text-secondary'
                 }`}
               >
                 {item.label}
@@ -80,7 +80,7 @@ export const Header: React.FC = () => {
 
           {/* Language Switcher & CTA */}
           <div className="hidden lg:flex items-center space-x-4">
-            <div className="flex items-center space-x-2 border-r border-gray-300 pr-4">
+            <div className="flex items-center space-x-2 border-r border-border pr-4">
               {languages.map((lang) => (
                 <Link
                   key={lang.code}
@@ -88,7 +88,7 @@ export const Header: React.FC = () => {
                   className={`px-2 py-1 text-sm font-medium rounded transition-colors ${
                     locale === lang.code
                       ? 'bg-primary text-white'
-                      : 'text-gray-600 hover:text-primary'
+                      : 'text-text-secondary hover:text-primary'
                   }`}
                 >
                   {lang.label}
@@ -105,7 +105,7 @@ export const Header: React.FC = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="lg:hidden p-2 text-gray-700 hover:text-primary transition-colors"
+            className="lg:hidden p-2 text-text-secondary hover:text-primary transition-colors"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -138,7 +138,7 @@ export const Header: React.FC = () => {
                   className={`px-4 py-2 text-base font-medium rounded transition-colors ${
                     pathname === item.href
                       ? 'bg-primary/10 text-primary'
-                      : 'text-gray-700 hover:bg-gray-100'
+                      : 'text-text-secondary hover:bg-cream'
                   }`}
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
@@ -146,7 +146,7 @@ export const Header: React.FC = () => {
                 </Link>
               ))}
             </nav>
-            <div className="flex items-center justify-between px-4 pt-4 border-t border-gray-200">
+            <div className="flex items-center justify-between px-4 pt-4 border-t border-border">
               <div className="flex items-center space-x-2">
                 {languages.map((lang) => (
                   <Link
@@ -155,7 +155,7 @@ export const Header: React.FC = () => {
                     className={`px-3 py-1 text-sm font-medium rounded transition-colors ${
                       locale === lang.code
                         ? 'bg-primary text-white'
-                        : 'text-gray-600 hover:bg-gray-100'
+                        : 'text-text-secondary hover:bg-cream'
                     }`}
                   >
                     {lang.label}
