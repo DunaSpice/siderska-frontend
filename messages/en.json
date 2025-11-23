@@ -1,0 +1,46 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "schedule": "Schedule",
+    "contact": "Contact"
+  },
+  "home": {
+    "hero": {
+      "title": "Online Yoga with Olena Siderska",
+      "subtitle": "19 years of experience. Group and personal sessions. Retreats in Turkey.",
+      "cta": "Book a Class"
+    },
+    "services": {
+      "title": "Services",
+      "online": "Online Groups",
+      "personal": "Personal Training",
+      "retreats": "Retreats"
+    }
+  },
+  "about": {
+    "title": "About Me",
+    "experience": "19 years of yoga teaching experience"
+  },
+  "services": {
+    "title": "Services",
+    "online": {
+      "title": "Online Group Classes",
+      "description": "Regular online group sessions"
+    },
+    "personal": {
+      "title": "Personal Training",
+      "description": "Individual approach to your practice"
+    },
+    "retreats": {
+      "title": "Retreats in Turkey",
+      "description": "Yoga retreats in scenic locations"
+    }
+  },
+  "booking": {
+    "title": "Book",
+    "selectClass": "Select a class",
+    "book": "Book Now"
+  }
+}
