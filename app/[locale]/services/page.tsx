@@ -1,5 +1,9 @@
 import { useTranslations } from 'next-intl';
 
+export function generateStaticParams() {
+  return [{ locale: 'uk' }, { locale: 'ru' }, { locale: 'en' }];
+}
+
 export default function Services() {
   const t = useTranslations('services');
 

@@ -1,9 +1,33 @@
 {
-  "nav": {
+  "navigation": {
     "home": "Главная",
     "about": "Обо мне",
     "services": "Услуги",
     "schedule": "Расписание",
+    "blog": "Блог",
+    "contact": "Контакты",
+    "bookClass": "Записаться"
+  },
+  "footer": {
+    "description": "Онлайн йога с 19-летним опытом. Групповые и персональные занятия. Ретриты в Турции. Методология Yoga23.",
+    "quickLinks": "Быстрые ссылки",
+    "about": "Обо мне",
+    "services": "Услуги",
+    "schedule": "Расписание",
+    "blog": "Блог",
+    "testimonials": "Отзывы",
+    "groupClasses": "Групповые занятия",
+    "personalTraining": "Персональные тренировки",
+    "retreats": "Ретриты",
+    "videoLibrary": "Видеотека",
+    "methodology": "Методология",
+    "newsletter": "Рассылка",
+    "newsletterDescription": "Получайте советы по йоге и новости о занятиях",
+    "emailPlaceholder": "Ваш email",
+    "subscribe": "Подписаться",
+    "allRightsReserved": "Все права защищены",
+    "privacy": "Конфиденциальность",
+    "terms": "Условия",
     "contact": "Контакты"
   },
   "home": {

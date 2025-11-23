@@ -1,6 +1,10 @@
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 
+export function generateStaticParams() {
+  return [{ locale: 'uk' }, { locale: 'ru' }, { locale: 'en' }];
+}
+
 export default function Home() {
   const t = useTranslations('home');
 

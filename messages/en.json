@@ -1,9 +1,33 @@
 {
-  "nav": {
+  "navigation": {
     "home": "Home",
     "about": "About",
     "services": "Services",
     "schedule": "Schedule",
+    "blog": "Blog",
+    "contact": "Contact",
+    "bookClass": "Book a Class"
+  },
+  "footer": {
+    "description": "Online yoga with 19 years of experience. Group and personal sessions. Retreats in Turkey. Yoga23 methodology.",
+    "quickLinks": "Quick Links",
+    "about": "About",
+    "services": "Services",
+    "schedule": "Schedule",
+    "blog": "Blog",
+    "testimonials": "Testimonials",
+    "groupClasses": "Group Classes",
+    "personalTraining": "Personal Training",
+    "retreats": "Retreats",
+    "videoLibrary": "Video Library",
+    "methodology": "Methodology",
+    "newsletter": "Newsletter",
+    "newsletterDescription": "Get yoga tips and class updates",
+    "emailPlaceholder": "Your email",
+    "subscribe": "Subscribe",
+    "allRightsReserved": "All rights reserved",
+    "privacy": "Privacy",
+    "terms": "Terms",
     "contact": "Contact"
   },
   "home": {
